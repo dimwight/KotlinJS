@@ -1,7 +1,7 @@
 /*
   This shows simple text floating around.
 */
-package hello
+package canvas
 
 import org.w3c.dom.CanvasRenderingContext2D
 import org.w3c.dom.HTMLCanvasElement
@@ -26,7 +26,7 @@ val height=canvas.height
 
 
 // class representing a floating text
-class HelloKotlin() {
+class Hello() {
   var relX = 0.2 + 0.2 * Math.random()
   var relY = 0.4 + 0.2 * Math.random()
 
@@ -88,9 +88,9 @@ fun renderBackground() {
 
 fun main(args: Array<String>) {
   val interval = 50
-  // we pass a literal that constructs a new HelloKotlin object
+  // we pass a literal that constructs a new Hello object
   val logos = Array(3) {
-    HelloKotlin()
+    Hello()
   }
 
   window.setInterval({
